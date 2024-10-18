@@ -84,6 +84,11 @@ fun BasicCompose(
                 .clip(RoundedCornerShape(10.dp))
 
         )// atau ""
+        Text(
+            text = " Nama",
+            fontWeight = FontWeight.W800,
+            fontSize = 20.sp,
+        )
     }
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
