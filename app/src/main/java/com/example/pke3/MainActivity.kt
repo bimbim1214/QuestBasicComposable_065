@@ -97,6 +97,9 @@ fun BasicCompose(
             fontSize = 20. sp,
             fontStyle = FontStyle.Italic,
         )
+        Text(
+            text = "20220140065",
+
     }
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
