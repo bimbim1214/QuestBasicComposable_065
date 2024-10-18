@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -17,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
@@ -51,21 +53,22 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun BasicCompose(
     modifier: Modifier = Modifier
-){
-    Column (
+) {
+    Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
         modifier = Modifier
             .fillMaxSize()
-            .background(brush = Brush.verticalGradient(
-                colors = listOf(
-                    Color(0xFF2196F3), // Biru
-                    Color(0xFF03DAC5)  // Hijau kebiruan
+            .background(
+                brush = Brush.verticalGradient(
+                    colors = listOf(
+                        Color(0xFF2196F3), // Biru
+                        Color(0xFF03DAC5)  // Hijau kebiruan
+                    )
                 )
             )
-            )
 
-    ){
+    ) {
         Text(
             text = "China vs Indonesia",
             style = TextStyle(
@@ -79,9 +82,10 @@ fun BasicCompose(
             fontWeight = FontWeight.Bold,
             fontSize = 35.sp,
         )
-        Image(painter = painterResource(id = R.drawable.fifa),
+        Image(
+            painter = painterResource(id = R.drawable.fifa),
             contentDescription = null,
-            modifier  = Modifier
+            modifier = Modifier
                 .clip(RoundedCornerShape(10.dp))
 
         )// atau ""
@@ -94,7 +98,7 @@ fun BasicCompose(
             text = "Bimo Aditya Pangestu",
             fontWeight = FontWeight.Bold,
             color = Color.LightGray,
-            fontSize = 20. sp,
+            fontSize = 20.sp,
             fontStyle = FontStyle.Italic,
         )
         Text(
@@ -103,7 +107,14 @@ fun BasicCompose(
             fontSize = 50.sp,
             fontStyle = FontStyle.Italic,
         )
+        Image(
+            painter = painterResource(id = R.drawable.sayaa),
+            contentDescription = null,
+
+
+        )
     }
+}
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
@@ -118,4 +129,4 @@ fun GreetingPreview() {
     Pke3Theme {
         Greeting("Android")
     }
-}}
+}
