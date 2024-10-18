@@ -62,7 +62,11 @@ fun BasicCompose(
     ){
         Text(
             text = "China vs Indonesia",
-
+            style = TextStyle(
+                fontSize = 40.sp,
+                fontWeight = FontWeight.Light,
+                color = Color.LightGray,
+            ),
         )
     }
 @Composable
