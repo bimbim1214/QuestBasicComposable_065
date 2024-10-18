@@ -70,7 +70,9 @@ fun BasicCompose(
         )
         Text(
             text = "2 - 1",
-
+            fontWeight = FontWeight.Bold,
+            fontSize = 35.sp,
+        )
     }
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
