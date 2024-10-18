@@ -92,7 +92,11 @@ fun BasicCompose(
         )
         Text(
             text = "Bimo Aditya Pangestu",
-
+            fontWeight = FontWeight.Bold,
+            color = Color.LightGray,
+            fontSize = 20. sp,
+            fontStyle = FontStyle.Italic,
+        )
     }
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
