@@ -68,6 +68,9 @@ fun BasicCompose(
                 color = Color.LightGray,
             ),
         )
+        Text(
+            text = "2 - 1",
+
     }
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
