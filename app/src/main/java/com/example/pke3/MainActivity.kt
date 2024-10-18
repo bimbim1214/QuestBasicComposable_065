@@ -111,6 +111,7 @@ fun BasicCompose(
             painter = painterResource(id = R.drawable.sayaa),
             contentDescription = null,
             modifier = Modifier
+                .clip(RoundedCornerShape(170.dp))
 
 
         )
