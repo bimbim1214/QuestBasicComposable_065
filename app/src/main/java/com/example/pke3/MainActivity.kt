@@ -42,7 +42,21 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun BasicCompose(
     modifier: Modifier = Modifier
+){
+    Column (
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center,
+        modifier = Modifier
+            .fillMaxSize()
+            .background(brush = Brush.verticalGradient(
+                colors = listOf(
+                    Color(0xFF2196F3), // Biru
+                    Color(0xFF03DAC5)  // Hijau kebiruan
+                )
+            )
+            )
 
+    ){}
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
