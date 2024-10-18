@@ -112,7 +112,9 @@ fun BasicCompose(
             contentDescription = null,
             modifier = Modifier
                 .clip(RoundedCornerShape(170.dp))
-
+                .size(380.dp)
+                .shadow(10.dp, RoundedCornerShape(130.dp))
+                .padding(5.dp)
 
         )
     }
